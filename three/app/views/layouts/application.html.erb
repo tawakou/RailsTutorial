@@ -7,8 +7,26 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+          
+      <header class="navbar-static-top navbar-inverse">
+      <div class="container">
+        <%= link_to image_tag("logogo.png", :size => '100x100',alt: "logo",id:"logo"),
+            home_path %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+          
+            <li><%= link_to "Log in", new_path %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
   <body>
+  
+
+    
+  
     <%= yield %>
+   
   </body>
 </html>

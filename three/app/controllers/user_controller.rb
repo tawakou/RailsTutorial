@@ -1,9 +1,10 @@
 class UserController < ApplicationController
   def login
-   $user = User.find_by(name: params[:session][:name])
-   		if $user.password==session[:password]
-   			redirect_to controller: 'hp',action:'home'
+   kari = User.find_by(name: params[:session][:name])
+   		if kari.password==params[:session][:password]
+   			$user = kari
   end
+redirect_to home_path
 
 end
 

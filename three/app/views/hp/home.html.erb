@@ -1,10 +1,18 @@
-<h1>Hp#home</h1>
-<p>Find me in app/views/hp/home.html.erb</p>
 
-<%= form_for(:session,url:login_path) do |f| %>
-	<%= f.label :name %>
-	<%= f.text_field :name %>
-	<%= f.label :password %>
-	<%= f.password_field :password %>
-<%= f.submit "ログイン", class: "btn btn-primary" %>
-<% end %>
+ <div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 cover-img" style="background-image:url('http://free-illustrations-ls01.gatag.net/images/lgi01a201406170900.jpg');">
+			<div class="cover-text text-center">
+				<p style="color: #fff; font-size:24pt; font-weight:bold">Academy.Code一期生募集開始<br />
+				プログラミングを学ぶ環境はここにある
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<% if $user!=nil %>
+	ようこそ<%= $user.name %>さん
+	<% end %>
+
