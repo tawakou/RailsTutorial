@@ -1,2 +1,10 @@
 <h1>Hp#home</h1>
 <p>Find me in app/views/hp/home.html.erb</p>
+
+<%= form_for(:session,url:login_path) do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+<%= f.submit "ログイン", class: "btn btn-primary" %>
+<% end %>
