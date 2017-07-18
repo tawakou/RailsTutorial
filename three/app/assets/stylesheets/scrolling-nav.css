@@ -35,21 +35,21 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background-image:url('http://photoshopvip.net/wp-content/uploads/2012/06/howto2.jpg');
 }
 
 .about-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #eee;
+    background-image:url('http://photoshopvip.net/wp-content/uploads/2012/06/howto2.jpg');
 }
 
 .services-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: #FFF;
 }
 
 .contact-section {
