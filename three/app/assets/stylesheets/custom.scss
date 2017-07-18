@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
+
 #logo {
   float: left;
   margin-right: 300px;
@@ -18,35 +21,108 @@
 }
 
 .cover-img {
-	height: 300px;
+	height: 250px;
 	display: table;
 	width: 100%;
 	background-size: cover;
 }
 
+
+.eena{
+	
+	display: table;
+	
+	margin-left:10px;
+	
+}
+
+.back{
+	height:700px;
+	width:100%;
+}
+
+
+
+
 /* ワイドスクリーン用のCSS */
 @media only screen and (min-width: 1500px) {
 	.cover-img {
-		height: 400px;
+		height: 600px;
+	}
+	.cover-text{
+		font-size:40px;
+	}
+	.eena{
+		width:300px;
+		height:200px;
 	}
 }
+
+
+
+@media only screen and (min-width : 1200px)and (max-width: 1500px) {
+	.cover-img {
+		height: 400px;
+	}
+	.cover-text{
+		font-size:35px;
+	}
+	.eena{
+	height:100px;
+	}
+}
+
+
 
 /* タブレット用のCSS */
 @media only screen and (min-width : 768px) and (max-width : 1200px) {
 	.cover-img {
-		height: 300px;
+		height: 200px;
+	}
+	.cover-text{
+		font-size:30px;
+	}
+	.eena{
+	
+	height:150px;
 	}
 }
+
+
+@media only screen and (min-width : 479px)and (max-width: 768px) {
+	.cover-img {
+		height: 200px;
+	}
+	.cover-text{
+		font-size:25px;
+	}
+	.eena{
+	
+	height:150px;
+	padding:0px;
+	}
+}
+
+
 
 /* スマホ用のCSS */
 @media only screen and (max-width: 479px) {
 	.cover-img {
-		height: 300px;
+		height: 150px;
 	}
+	.cover-text{
+		font-size:20px;
+	}
+	.eena{
+	
+	height:100px;
+	}
+	
 }
 
 .cover-text {
-	display: table-cell;
+	display: table-cell
 	vertical-align: middle;
   text-align: center;
+  margin-top:300px;
 }

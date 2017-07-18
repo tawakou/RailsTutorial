@@ -7,6 +7,8 @@ class UserController < ApplicationController
 redirect_to home_path
 
 end
+def new
+	end
 
   def create
   end
