@@ -28,6 +28,7 @@
 }
 
 
+
 .eena{
 	
 	display: table;
@@ -39,6 +40,9 @@
 .back{
 	height:700px;
 	width:100%;
+}
+.taiguu{
+	margin:auto;
 }
 
 
@@ -56,6 +60,11 @@
 		width:300px;
 		height:200px;
 	}
+	.taiguu td{
+	width:400px;
+	font-size:16pt;
+	text-align:center;
+	}
 }
 
 
@@ -68,7 +77,11 @@
 		font-size:35px;
 	}
 	.eena{
-	height:100px;
+	height:250px;
+	}
+	.taiguu td{
+	width:350px;
+	font-size:16pt;
 	}
 }
 
@@ -84,7 +97,12 @@
 	}
 	.eena{
 	
-	height:150px;
+	height:200px;
+	}
+.taiguu td{
+	width:300px;
+	text-align:center;
+	font-size:14pt;
 	}
 }
 
@@ -98,8 +116,13 @@
 	}
 	.eena{
 	
-	height:150px;
+	height:120px;
 	padding:0px;
+	}
+	.taiguu td{
+	line-height:20px;
+	font-size:12pt;
+
 	}
 }
 
@@ -115,13 +138,17 @@
 	}
 	.eena{
 	
-	height:100px;
+	height:98px;
 	}
-	
-}
+	.taiguu td{
+	line-height:20px;
+
+	}
+
+	}
 
 .cover-text {
-	display: table-cell
+	display: table-cell;
 	vertical-align: middle;
   text-align: center;
   margin-top:300px;
