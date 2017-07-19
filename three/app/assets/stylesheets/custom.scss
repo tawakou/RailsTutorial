@@ -47,6 +47,7 @@
 
 
 
+
 /* ワイドスクリーン用のCSS */
 @media only screen and (min-width: 1500px) {
 	.cover-img {
@@ -90,7 +91,7 @@
 /* タブレット用のCSS */
 @media only screen and (min-width : 768px) and (max-width : 1200px) {
 	.cover-img {
-		height: 200px;
+		height: 300px;
 	}
 	.cover-text{
 		font-size:30px;
