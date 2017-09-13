@@ -1,0 +1,167 @@
+       <div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 cover-img" style="background-image:url('http://free-illustrations-ls01.gatag.net/images/lgi01a201406170900.jpg'); margin-top:90px;">
+			<div class="cover-text text-center">
+				<p style="color: #f5f5f5;  font-weight:bold;">Academy.Code一期生募集開始<br />
+				プログラミングを学ぶ環境はここにある
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+ 
+      
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                	DMM.sharebike
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="http://www.dmm.com/">aaa</a>
+                    </li>
+                    <li>
+                       <a href="http://www.dmm.com/">DMM.com</a>
+                    </li>
+                    <li>
+                       <li><%= link_to "お問い合わせ",   info_path %></li>
+                    </li>
+                    
+                    </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 back" style="background-image:url('http://photoshopvip.net/wp-content/uploads/2012/06/howto2.jpg');">
+                    <h1>Codeとは</h1>
+                    <h3>プログラミングを本気で学びたいと思う方に場所、仲間、生活資金を提供します。<br />その他いろいろーー</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>待遇</h1><br />
+                    <table class="taiguu">
+                    <tr>
+                     <td><div class="col-lg-4 eena" >
+                    <%= image_tag("office.png",:class => "eena")  %>
+                    
+                    </div></td>
+                     <td><div class="col-lg-4 eena">
+                     <%= image_tag("person.png",:class => "eena")  %>
+                     
+                     	
+
+                     </div></td>
+                     <td><div class="col-lg-4 eena">
+                     <%= image_tag("money.png",:class => "eena")  %>
+                     	
+
+                     </div></td>
+                     </tr>
+                     <tr>
+                     <td>六本木オフィス無料使用</td>
+                     <td>同じ志を持った仲間</td>
+                     <td>最低限の生活ができるお金</td>
+                     </tr>
+                     </table>
+
+                    
+
+
+                     
+                     
+                </div>
+
+               
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>募集要項</h1>
+                    <table class="bosyuu" style="margin:auto; font-size:14pt;">
+                        <tr>
+                            <td>18~30歳の方</td>
+                        </tr>
+                        <tr>
+                            <td>週40時間以上確保できる方</td>
+                        </tr>
+                        <tr>
+                            <td>その他いろいろ</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- oubo-section -->
+    <section id="oubo" class="oubo-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>応募フォーム</h1>
+                  
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+
+
+
+
+<% if $user!=nil %>
+	ようこそ<%= $user.name %>さん
+	<% end %>
